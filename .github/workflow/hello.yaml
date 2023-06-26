@@ -1,0 +1,16 @@
+name: Hello world
+
+on: 
+  workflow_dispatch
+
+
+jobs: 
+  hello:
+    runs_on: ubuntu-latest
+
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Print Hellow World
+        run: echo Hello everyone!
